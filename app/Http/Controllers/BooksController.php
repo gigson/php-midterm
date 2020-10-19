@@ -41,7 +41,7 @@ class BooksController extends Controller
             "description" => $request->input("description"),
             "author_name" => $request->input("author"),
             "genre_id" => $request->input("genre"),
-            "img_url" => $request->input("img", "asdasd")
+            "img_url" => $request->input("img")
         ]);
 
         return redirect()->route('bookCreate');
